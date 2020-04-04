@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ServoPower2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -137,7 +136,7 @@ U 1 1 5DA40D31
 P 4750 7250
 F 0 "J13" H 4830 7242 50  0000 L CNN
 F 1 "Conn_01x02" H 4830 7151 50  0000 L CNN
-F 2 "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" H 4750 7250 50  0001 C CNN
+F 2 "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical" H 4750 7250 50  0001 C CNN
 F 3 "~" H 4750 7250 50  0001 C CNN
 	1    4750 7250
 	1    0    0    -1  
@@ -539,123 +538,6 @@ Text Label 6150 3150 0    50   ~ 0
 S43
 Text Label 5150 3150 0    50   ~ 0
 S42
-Text Label 6300 6000 0    50   ~ 0
-S11
-Text Label 6300 5900 0    50   ~ 0
-S12
-Text Label 6300 5700 0    50   ~ 0
-S13
-Text Label 4250 6300 2    50   ~ 0
-S21
-Text Label 4250 6200 2    50   ~ 0
-S22
-Text Label 4250 5900 2    50   ~ 0
-S23
-Text Label 4250 5800 2    50   ~ 0
-S31
-Text Label 4250 4700 2    50   ~ 0
-S32
-Text Label 4250 5200 2    50   ~ 0
-S33
-Text Label 4250 5100 2    50   ~ 0
-S41
-Text Label 4250 5000 2    50   ~ 0
-S42
-Text Label 4250 4900 2    50   ~ 0
-S43
-$Comp
-L Connector:Raspberry_Pi_2_3 pi1
-U 1 1 5DA84B0C
-P 5350 5400
-F 0 "pi1" H 5350 6789 50  0000 C CNN
-F 1 "pi" H 5350 6880 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 5350 5400 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5350 5400 50  0001 C CNN
-	1    5350 5400
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	4550 4700 4250 4700
-Wire Wire Line
-	4250 4900 4550 4900
-Wire Wire Line
-	4550 5000 4250 5000
-Wire Wire Line
-	4250 5100 4550 5100
-Wire Wire Line
-	4550 5200 4250 5200
-Wire Wire Line
-	4250 5800 4550 5800
-Wire Wire Line
-	4550 5900 4250 5900
-Wire Wire Line
-	4250 6200 4550 6200
-Wire Wire Line
-	4550 6300 4250 6300
-Wire Wire Line
-	6150 6000 6300 6000
-Wire Wire Line
-	6300 5900 6150 5900
-Wire Wire Line
-	6150 5700 6300 5700
-$Comp
-L power:GND #PWR025
-U 1 1 5DAD6858
-P 4700 3900
-F 0 "#PWR025" H 4700 3650 50  0001 C CNN
-F 1 "GND" H 4705 3727 50  0000 C CNN
-F 2 "" H 4700 3900 50  0001 C CNN
-F 3 "" H 4700 3900 50  0001 C CNN
-	1    4700 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 3950 4700 3900
-Wire Wire Line
-	4950 4100 4950 3900
-Wire Wire Line
-	4950 3900 4700 3900
-Connection ~ 4700 3900
-Wire Wire Line
-	4950 4100 5050 4100
-Connection ~ 4950 4100
-Wire Wire Line
-	5050 4100 5150 4100
-Connection ~ 5050 4100
-Wire Wire Line
-	5150 4100 5250 4100
-Connection ~ 5150 4100
-Wire Wire Line
-	5350 4100 5250 4100
-Connection ~ 5250 4100
-Wire Wire Line
-	5450 4100 5350 4100
-Connection ~ 5350 4100
-Wire Wire Line
-	5550 4100 5450 4100
-Connection ~ 5450 4100
-Wire Wire Line
-	5550 4100 5650 4100
-Connection ~ 5550 4100
-NoConn ~ 4550 4800
-NoConn ~ 4550 5400
-NoConn ~ 4550 5500
-NoConn ~ 4550 6000
-NoConn ~ 6150 6200
-NoConn ~ 6150 6300
-NoConn ~ 6150 5600
-NoConn ~ 6150 5500
-NoConn ~ 6150 5300
-NoConn ~ 6150 5200
-NoConn ~ 6150 5100
-NoConn ~ 6150 5000
-NoConn ~ 6150 4900
-NoConn ~ 6150 4700
-NoConn ~ 6150 4600
-NoConn ~ 5450 6700
-NoConn ~ 5550 6700
-NoConn ~ 5250 6700
-NoConn ~ 4550 5600
 $Comp
 L Connector_Generic:Conn_01x02 J14
 U 1 1 5DA88DBD
@@ -711,21 +593,6 @@ F 3 "" H 6050 6900 50  0001 C CNN
 	1    6050 6900
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	5150 6700 5150 6850
-Wire Wire Line
-	5050 6850 5150 6850
-$Comp
-L power:+5V #PWR0102
-U 1 1 5DAFDED8
-P 5050 6850
-F 0 "#PWR0102" H 5050 6700 50  0001 C CNN
-F 1 "+5V" H 5065 7023 50  0000 C CNN
-F 2 "" H 5050 6850 50  0001 C CNN
-F 3 "" H 5050 6850 50  0001 C CNN
-	1    5050 6850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0103
 U 1 1 5DAFEA55
@@ -741,4 +608,89 @@ Wire Wire Line
 	5700 6900 5700 7000
 Wire Wire Line
 	5700 7000 6050 7000
+$Comp
+L teensy:Teensy4.0 U1
+U 1 1 5E8951C9
+P 2500 5150
+F 0 "U1" H 2500 6765 50  0000 C CNN
+F 1 "Teensy4.0" H 2500 6700 50  0000 C CNN
+F 2 "teensy:Teensy40" H 2100 5350 50  0001 C CNN
+F 3 "" H 2100 5350 50  0001 C CNN
+	1    2500 5150
+	1    0    0    -1  
+$EndComp
+Text Label 1000 3900 0    50   ~ 0
+S11
+Wire Wire Line
+	1400 3900 1000 3900
+Text Label 1000 4000 0    50   ~ 0
+S12
+Wire Wire Line
+	1400 4000 1000 4000
+Text Label 1000 4100 0    50   ~ 0
+S13
+Text Label 1000 4200 0    50   ~ 0
+S21
+Text Label 1000 4300 0    50   ~ 0
+S22
+Text Label 1000 4400 0    50   ~ 0
+S23
+Text Label 1000 4500 0    50   ~ 0
+S31
+Text Label 1000 4600 0    50   ~ 0
+S32
+Text Label 1000 4700 0    50   ~ 0
+S33
+Text Label 1000 4800 0    50   ~ 0
+S41
+Text Label 1000 5800 0    50   ~ 0
+S42
+Text Label 1000 5900 0    50   ~ 0
+S43
+Wire Wire Line
+	1400 4100 1000 4100
+Wire Wire Line
+	1400 4200 1000 4200
+Wire Wire Line
+	1400 4300 1000 4300
+Wire Wire Line
+	1400 4400 1000 4400
+Wire Wire Line
+	1400 4500 1000 4500
+Wire Wire Line
+	1400 4600 1000 4600
+Wire Wire Line
+	1400 4700 1000 4700
+Wire Wire Line
+	1400 4800 1000 4800
+Wire Wire Line
+	1400 5800 1000 5800
+Wire Wire Line
+	1400 5900 1000 5900
+$Comp
+L power:+5V #PWR0102
+U 1 1 5E89778F
+P 3850 6100
+F 0 "#PWR0102" H 3850 5950 50  0001 C CNN
+F 1 "+5V" H 3865 6273 50  0000 C CNN
+F 2 "" H 3850 6100 50  0001 C CNN
+F 3 "" H 3850 6100 50  0001 C CNN
+	1    3850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6100 3850 6100
+$Comp
+L power:GND #PWR0104
+U 1 1 5E89BCE8
+P 3850 6200
+F 0 "#PWR0104" H 3850 5950 50  0001 C CNN
+F 1 "GND" H 3855 6027 50  0000 C CNN
+F 2 "" H 3850 6200 50  0001 C CNN
+F 3 "" H 3850 6200 50  0001 C CNN
+	1    3850 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6200 3850 6200
 $EndSCHEMATC
