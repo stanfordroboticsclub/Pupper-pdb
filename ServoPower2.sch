@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ServoPower2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -732,17 +733,6 @@ Wire Wire Line
 	1950 2150 2500 2150
 Wire Wire Line
 	4700 2850 4950 2850
-$Comp
-L SparkFun-Sensors:IMUBN U2
-U 1 1 5E9A8464
-P 9500 2350
-F 0 "U2" H 9450 2965 50  0000 C CNN
-F 1 "IMUBN" H 9450 2874 50  0000 C CNN
-F 2 "Sparkfun:IMUBN" H 9800 1750 50  0001 C CNN
-F 3 "" H 9800 1750 50  0001 C CNN
-	1    9500 2350
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5500 6300
 NoConn ~ 12900 4450
 NoConn ~ 12700 1650
@@ -798,4 +788,15 @@ Text Label 2100 4450 0    50   ~ 0
 INT
 Wire Wire Line
 	2100 4450 2500 4450
+$Comp
+L SparkFun-Sensors:IMUBN U2
+U 1 1 5E9A8464
+P 9500 2350
+F 0 "U2" H 9450 2965 50  0000 C CNN
+F 1 "IMUBN" H 9450 2874 50  0000 C CNN
+F 2 "IMU_library:IMUBN" H 9800 1750 50  0001 C CNN
+F 3 "" H 9800 1750 50  0001 C CNN
+	1    9500 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ServoPower2-rescue)(type Legacy)(uri ${KIPRJMOD}/ServoPower2-rescue.lib)(options "")(descr ""))
+  (lib (name SparkFun-Sensors)(type Legacy)(uri ${KIPRJMOD}/IMU_library/SparkFun-Sensors.lib)(options "")(descr ""))
+)
